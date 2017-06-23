@@ -32,7 +32,8 @@ import android.text.style.UnderlineSpan;
 import android.view.View;
 import android.widget.TextView;
 
-import pc.wlt.com.superlibrary.Interface.OnTextClickListener;
+import com.superlibrary.ken.Interface.OnTextClickListener;
+
 
 /**
  * Created by PC_WLT on 2017/5/9.

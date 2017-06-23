@@ -15,8 +15,9 @@ import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 
-import pc.wlt.com.superlibrary.R;
-import pc.wlt.com.superlibrary.widget.TitleBar;
+import com.superlibrary.ken.R;
+import com.superlibrary.ken.widget.TitleBar;
+
 
 /**
  * Created by PC_WLT on 2017/3/27.
