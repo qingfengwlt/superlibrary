@@ -10,6 +10,6 @@ package com.superlibrary.ken.common;
 public class Link {
 
     public static final boolean DEBUG=false;
-    public static final String  URL_BOOT= Constants.URL_BOTTOM;//网络请求根目录
+    public static final String  URL_BOOT= Constants.BASE_URL;//网络请求根目录
 
 }

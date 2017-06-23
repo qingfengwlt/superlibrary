@@ -1,18 +1,21 @@
 package com.superlibrary.ken.utils;
 
+import android.annotation.TargetApi;
 import android.content.Context;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.TimedMetaData;
 import android.media.TimedText;
+import android.os.Build;
 
-import pc.wlt.com.superlibrary.Interface.OnMediaPlayerListener;
+import com.superlibrary.ken.Interface.OnMediaPlayerListener;
 
 
 /**
  * Created by PC_WLT on 2017/4/6.
  */
 
+@TargetApi(Build.VERSION_CODES.M)
 public class MMediaPlayer implements MediaPlayer.OnErrorListener ,MediaPlayer.OnInfoListener,MediaPlayer.OnPreparedListener,MediaPlayer.OnCompletionListener,MediaPlayer.OnSeekCompleteListener,MediaPlayer.OnBufferingUpdateListener,MediaPlayer.OnTimedTextListener,MediaPlayer.OnTimedMetaDataAvailableListener,MediaPlayer.OnVideoSizeChangedListener{
 
     private Context mContext;

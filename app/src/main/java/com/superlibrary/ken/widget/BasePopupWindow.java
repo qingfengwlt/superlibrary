@@ -21,9 +21,9 @@ import android.view.animation.TranslateAnimation;
 import android.widget.PopupWindow;
 
 import com.nineoldandroids.view.ViewHelper;
+import com.superlibrary.ken.Interface.ViewCreate;
+import com.superlibrary.ken.utils.InputMethodUtils;
 
-import pc.wlt.com.superlibrary.Interface.ViewCreate;
-import pc.wlt.com.superlibrary.utils.InputMethodUtils;
 
 /**
  * Created by 大灯泡 on 2016/1/14.
