@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">JiayinTwo</string>
+    <string name="dummy_text">Using psychohistory, Seldon mathematically determines what he calls The Seldon Plan—a plan to determine the right time and place to set up a new society, one that would replace the collapsing Galactic Empire by sheer force of social pressure, but over only a thousand-year time span, rather than the ten-to-thirty-thousand-year time span that would normally have been required, and thus reduce the human suffering from living in a time of barbarism. The Foundation is placed on Terminus, a resource-poor planet entirely populated by scientists and their families. The planet—or so Seldon claimed—was originally occupied to create the Encyclopedia Galactica, a vast compilation of the knowledge of a dying galactic empire.</string>
+    <string name="foo_text">In reality, Terminus had a much larger role in his Plan, which larger role he had to conceal from its inhabitants at first.</string>
+    <string name="fuzzy_text">I am trying to create test application similar to Facebook chat heads.</string>
+
+
+    <string name="text_text">you!I am trying to create test application similar To Facebook chat heads. are you already? to tomato to to to to xmlns:tools="http://schemas.android.com/tools"</string>
+    <!--查单词-->
+    <string name="psE">英[%1$s]</string>
+    <string name="psA">美[%1$s]</string>
+    <string name="posAcceptation">基本释义:</string>
+    <string name="sent">例句:</string>
+    <string name="pos">canskjfnsdnksdhviksaml</string>
+    <string name="vocabulary">我的生词本</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

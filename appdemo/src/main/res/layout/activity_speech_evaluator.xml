@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SpeechEvaluatorActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_speech_evaluator"
+        />
+
+    <Button
+        android:id="@+id/btn_speech_evaluator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edt_speech_evaluator"
+        android:layout_marginLeft="137dp"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="209dp"
+        android:text="record"/>
+
+    <TextView
+        android:id="@+id/tv_speech_evaluator_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="78dp"
+        android:text="结果:"/>
+
+    <Button
+        android:id="@+id/btn_speech_evaluator_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btn_speech_evaluator"
+        android:layout_alignRight="@+id/btn_speech_evaluator"
+        android:layout_below="@+id/btn_speech_evaluator"
+        android:layout_marginTop="68dp"
+        android:text="stop"/>
+
+</RelativeLayout>

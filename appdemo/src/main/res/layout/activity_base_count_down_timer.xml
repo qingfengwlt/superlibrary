@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".activity.BaseCountDownTimerActivity">
+
+    <TextView
+        android:id="@+id/tv_base_count_down_timer_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="19:23：30"
+        android:padding="10dp"
+        />
+    <TextView
+        android:id="@+id/tv_base_count_down_timer_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="19小时23分钟10秒"
+        android:padding="10dp"
+        />
+    <TextView
+        android:id="@+id/tv_base_count_down_timer_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="60秒"
+        android:padding="10dp"
+        />
+</LinearLayout>
