@@ -10,6 +10,11 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+import io.reactivex.Observer;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.annotations.NonNull;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.schedulers.Schedulers;
 import ken.superlibrary.com.appdemo.R;
 import ken.superlibrary.com.appdemo.enity.ComBean;
 import ken.superlibrary.com.appdemo.utils.RetrofitManager;
@@ -19,9 +24,6 @@ import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import rx.Observer;
-import rx.android.schedulers.AndroidSchedulers;
-import rx.schedulers.Schedulers;
 
 public class OKHttpActivity extends BaseAppCompatActivity implements MView {
 
@@ -48,13 +50,16 @@ public class OKHttpActivity extends BaseAppCompatActivity implements MView {
         Map map=new HashMap();
         map.put("xsid","100011");
         RetrofitManager.getInstance().test4(ToolUtil.getRequesBody(map)).subscribeOn(Schedulers.io()) .observeOn(AndroidSchedulers.mainThread()).subscribe(new Observer<ComBean>() {
+
+
+
             @Override
-            public void onCompleted() {
+            public void onComplete() {
 
             }
 
             @Override
-            public void onError(Throwable e) {
+            public void onSubscribe(@NonNull Disposable d) {
 
             }
 
@@ -62,20 +67,32 @@ public class OKHttpActivity extends BaseAppCompatActivity implements MView {
             public void onNext(ComBean t) {
 
             }
+
+            @Override
+            public void onError(@NonNull Throwable e) {
+
+            }
         });
     }
     private void requestData3() {
         Map map=new HashMap();
         map.put("xsid","100011");
-        RetrofitManager.getInstance().test3(ToolUtil.getRequesBody(map)).subscribeOn(Schedulers.io()) .observeOn(AndroidSchedulers.mainThread()).subscribe(new rx.Observer<ResponseBody>() {
-            @Override
-            public void onCompleted() {
+        RetrofitManager.getInstance().test3(ToolUtil.getRequesBody(map)).subscribeOn(Schedulers.io()) .observeOn(AndroidSchedulers.mainThread()).subscribe(new Observer<ResponseBody>() {
 
-            }
 
             @Override
             public void onError(Throwable e) {
                 Log.d(TAG,e.getMessage());
+            }
+
+            @Override
+            public void onComplete() {
+
+            }
+
+            @Override
+            public void onSubscribe(@NonNull Disposable d) {
+
             }
 
             @Override
@@ -95,15 +112,21 @@ public class OKHttpActivity extends BaseAppCompatActivity implements MView {
     private void requestData2() {
         Map map=new HashMap();
         map.put("xsid","100011");
-        RetrofitManager.getInstance().test2("100011").subscribeOn(Schedulers.io()) .observeOn(AndroidSchedulers.mainThread()).subscribe(new rx.Observer<ComBean>() {
-            @Override
-            public void onCompleted() {
-
-            }
+        RetrofitManager.getInstance().test2("100011").subscribeOn(Schedulers.io()) .observeOn(AndroidSchedulers.mainThread()).subscribe(new Observer<ComBean>() {
 
             @Override
             public void onError(Throwable e) {
                 Log.d(TAG,e.getMessage());
+            }
+
+            @Override
+            public void onComplete() {
+
+            }
+
+            @Override
+            public void onSubscribe(@NonNull Disposable d) {
+
             }
 
             @Override

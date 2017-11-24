@@ -10,6 +10,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import io.reactivex.Observable;
 import ken.superlibrary.com.appdemo.base.BaseApplication;
 import ken.superlibrary.com.appdemo.enity.ComBean;
 import okhttp3.Cache;
@@ -21,13 +22,12 @@ import okhttp3.Response;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Retrofit;
-import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
+import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.Body;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
 import retrofit2.http.Query;
-import rx.Observable;
 
 
 /**
@@ -79,7 +79,7 @@ public class RetrofitManager {
                     .baseUrl(Constants.base_url)
                     .client(getOkHttpClient())
                     .addConverterFactory(GsonConverterFactory.create(new Gson()))
-                    .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
+                    .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                     .build();
             mGetApiInterface=retrofit.create(GetApiInterface.class);
         }

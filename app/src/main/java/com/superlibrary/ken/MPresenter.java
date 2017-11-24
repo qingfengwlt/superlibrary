@@ -1,8 +1,8 @@
 package com.superlibrary.ken;
 
 
+import io.reactivex.Observable;
 import retrofit2.Call;
-import rx.Observable;
 
 /**
  * @author leitao

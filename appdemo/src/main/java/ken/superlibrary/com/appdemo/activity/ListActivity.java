@@ -42,6 +42,8 @@ public class ListActivity extends BaseAppCompatActivity {
         list.add("Examination");
         list.add("okhttp");
         list.add("login");
+        list.add("ImagePickerActivity");
+        list.add("slideLayout");
         for (int i=0;i<30;i++){
             list.add("item"+i);
         }
@@ -92,6 +94,12 @@ public class ListActivity extends BaseAppCompatActivity {
                         break;
                     case 11:
                         openActivity(LoginActivity.class);
+                        break;
+                    case 12:
+                        openActivity(ImagePickerActivity.class);
+                        break;
+                    case 13:
+                        openActivity(SlideLayoutActivity.class);
                         break;
 
                 }
